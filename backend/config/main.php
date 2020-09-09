@@ -8,21 +8,27 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'name' => 'ПО - Яблоки',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'homeUrl' => '/',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+            'identityClass' => \common\models\User::class,
+            'enableAutoLogin' => false,
+            'identityCookie' => [
+                'name' => '_identity-backend',
+                'httpOnly' => true
+            ],
+            'loginUrl' => ['sign-in'],
         ],
         'session' => [
-            // this is the name of the session cookie used for login on the backend
+            'class' => 'yii\web\CacheSession',
+            'cache' => 'cache',
             'name' => 'advanced-backend',
         ],
         'log' => [
@@ -37,14 +43,29 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
+            'enableStrictParsing' => true,
             'showScriptName' => false,
-            'rules' => [
+            'rules' => require(__DIR__ . '/routes.php'),
+        ],
+    ],
+    'as beforeRequest' => [
+        'class' => 'yii\filters\AccessControl',
+        'rules' => [
+            [
+                'actions' => [
+                    'sign-in',
+                ],
+                'allow' => true,
+                'roles' => ['?'],
+            ],
+            [
+                'allow' => true,
+                'roles' => ['@'],
             ],
         ],
-        */
     ],
+    'modules' => [],
     'params' => $params,
 ];

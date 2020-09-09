@@ -30,6 +30,9 @@ return [
                 ],
             ],
         ],
+        'response' => [
+            'class' => 'yii\console\Response',
+        ]
     ],
     'params' => $params,
 ];

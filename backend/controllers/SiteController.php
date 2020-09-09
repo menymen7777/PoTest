@@ -1,17 +1,22 @@
 <?php
+
 namespace backend\controllers;
 
+use backend\forms\auth\LoginForm;
+use backend\services\AuthService;
+use backend\traits\BaseExceptionProcessingErrorsTrait;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
+    use BaseExceptionProcessingErrorsTrait;
+
     /**
      * {@inheritdoc}
      */
@@ -22,7 +27,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['error', 'sign-in'],
                         'allow' => true,
                     ],
                     [
@@ -68,22 +73,28 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionLogin()
+    public function actionSignIn()
     {
-        if (!Yii::$app->user->isGuest) {
+        if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            $model->password = '';
-
-            return $this->render('login', [
-                'model' => $model,
-            ]);
+        $loginForm = new LoginForm();
+        if ($loginForm->load(Yii::$app->request->post())) {
+            $authService = new AuthService();
+            try {
+                $authService->signIn($loginForm);
+                Yii::$app->session->setFlash('success', 'Авторизация прошла успешно');
+                return $this->goHome();
+            } catch (\Exception $exception) {
+                $this->processingException($exception, $message);
+                $this->setMessage($message);
+            }
         }
+
+        return $this->render('sign-in', [
+            'loginForm' => $loginForm,
+        ]);
     }
 
     /**
@@ -94,7 +105,6 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
 }
