@@ -15,7 +15,7 @@ class m130524_201442_init extends Migration
             'password_hash' => $this->string()->notNull(),
             'password_reset_token' => $this->string()->unique(),
             'email' => $this->string()->notNull()->unique(),
-            'status' => $this->integer()->notNull()->defaultValue(User::STATUS_NONACTIVE),
+            'status' => $this->integer()->notNull()->defaultValue(User::STATUS_NON_ACTIVE),
             'created_at' => 'timestamp with time zone NOT NULL DEFAULT NOW()',
             'updated_at' => 'timestamp with time zone NOT NULL DEFAULT NOW()',
         ]);

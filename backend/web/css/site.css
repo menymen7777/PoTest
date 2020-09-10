@@ -1,6 +1,6 @@
 html,
 body {
-    height: 100%;
+    height: 100%!important;
 }
 
 .wrap {
@@ -118,4 +118,8 @@ a.desc:after {
 
 .nav > li > form > button.logout:focus {
     outline: none;
+}
+
+.find-button {
+    margin-top: 23px;
 }

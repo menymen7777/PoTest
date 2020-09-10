@@ -14,6 +14,10 @@ return [
             'dirMode' => 0777,
             'fileMode' => 0777,
         ],
+        'formatter' => [
+            'timeZone' => 'Europe/Moscow',
+            'defaultTimeZone' => 'Europe/Moscow',
+        ],
         'response' => [
             'class' => \yii\web\Response::class,
             'on beforeSend' => function ($event) {

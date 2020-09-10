@@ -25,6 +25,11 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+<div class="modals">
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog js__modal-body"></div>
+    </div>
+</div>
 
 <div class="wrap">
     <?php
@@ -43,6 +48,7 @@ AppAsset::register($this);
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/sign-in']];
     } else {
+        $menuItems[] = ['label' => 'Яблоки', 'url' => ['/apple']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/logout'], 'post')
             . Html::submitButton(
@@ -64,7 +70,9 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
-        <?= $content ?>
+        <div class="body-content">
+            <?= $content ?>
+        </div>
     </div>
 </div>
 

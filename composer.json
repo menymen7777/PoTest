@@ -18,7 +18,10 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "himiklab/yii2-recaptcha-widget": "^2.1"
+        "himiklab/yii2-recaptcha-widget": "^2.1",
+        "dmstr/yii2-adminlte-asset": "^2.6",
+        "softcommerce/yii2-knob": "^0.1.0",
+        "kartik-v/yii2-widget-select2": "^2.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

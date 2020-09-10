@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "818973e882f835b9379b8797de756352",
+    "content-hash": "2d642cba3b0dd97714efee47af737056",
     "packages": [
+        {
+            "name": "almasaeed2010/adminlte",
+            "version": "v2.4.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ColorlibHQ/AdminLTE.git",
+                "reference": "e7ffa67a4649dc08d2018708a38604a6c0a02ab6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/e7ffa67a4649dc08d2018708a38604a6c0a02ab6",
+                "reference": "e7ffa67a4649dc08d2018708a38604a6c0a02ab6",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.0 <4.0.0"
+            },
+            "type": "template",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdullah Almsaeed",
+                    "email": "abdullah@almsaeedstudio.com"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+            "homepage": "https://adminlte.io/",
+            "keywords": [
+                "JS",
+                "admin",
+                "back-end",
+                "css",
+                "less",
+                "responsive",
+                "template",
+                "theme",
+                "web"
+            ],
+            "time": "2019-08-29T08:20:20+00:00"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.4.1",
@@ -161,6 +204,109 @@
                 "markdown-extra"
             ],
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "cebe/yii2-gravatar",
+            "version": "1.1",
+            "target-dir": "cebe/gravatar",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cebe/yii2-gravatar.git",
+                "reference": "c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cebe/yii2-gravatar/zipball/c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057",
+                "reference": "c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-0": {
+                    "cebe\\gravatar\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Core framework development"
+                }
+            ],
+            "description": "Gravatar Widget for Yii 2",
+            "keywords": [
+                "gravatar",
+                "yii"
+            ],
+            "time": "2013-12-10T17:49:58+00:00"
+        },
+        {
+            "name": "dmstr/yii2-adminlte-asset",
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
+                "reference": "c96336e1960ebc6c1e72487a7c6ca1a1589519fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c96336e1960ebc6c1e72487a7c6ca1a1589519fe",
+                "reference": "c96336e1960ebc6c1e72487a7c6ca1a1589519fe",
+                "shasum": ""
+            },
+            "require": {
+                "almasaeed2010/adminlte": "^2.4.0",
+                "cebe/yii2-gravatar": "1.*",
+                "rmrevin/yii2-fontawesome": "~2.9",
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
+                },
+                {
+                    "name": "Evgeniy Tkachenko",
+                    "email": "et.coder@gmail.com"
+                }
+            ],
+            "description": "AdminLTE backend theme asset bundle for Yii 2.0 Framework",
+            "keywords": [
+                "AdminLTE",
+                "admin",
+                "asset",
+                "backend",
+                "css",
+                "extension",
+                "less",
+                "theme",
+                "yii2"
+            ],
+            "time": "2018-07-24T14:47:13+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -347,6 +493,54 @@
             "time": "2020-06-29T00:56:53+00:00"
         },
         {
+            "name": "fortawesome/font-awesome",
+            "version": "v4.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a8386aae19e200ddb0f6845b5feeee5eb7013687",
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.6.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
             "name": "himiklab/yii2-recaptcha-widget",
             "version": "2.1.1",
             "source": {
@@ -395,6 +589,118 @@
             "time": "2019-05-14T07:40:36+00:00"
         },
         {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "v2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "9ddb662bdf49fdb671a90853912a40418a26a0dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/9ddb662bdf49fdb671a90853912a40418a26a0dd",
+                "reference": "9ddb662bdf49fdb671a90853912a40418a26a0dd",
+                "shasum": ""
+            },
+            "suggest": {
+                "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
+                "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "time": "2019-03-13T17:14:54+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-widget-select2",
+            "version": "v2.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-select2.git",
+                "reference": "78efbcd1ae87b87803f9beb5e692acf790106cfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/78efbcd1ae87b87803f9beb5e692acf790106cfb",
+                "reference": "78efbcd1ae87b87803f9beb5e692acf790106cfb",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": ">=1.9",
+                "select2/select2": ">=4.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\select2\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 wrapper for the Select2 jQuery plugin (sub repo split from yii2-widgets).",
+            "homepage": "https://github.com/kartik-v/yii2-widget-select2",
+            "keywords": [
+                "dropdown",
+                "extension",
+                "form",
+                "jquery",
+                "plugin",
+                "select2",
+                "widget",
+                "yii2"
+            ],
+            "funding": [
+                {
+                    "url": "https://opencollective.com/yii2-widget-select2",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-07-22T10:40:59+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v9.99.99",
             "source": {
@@ -438,6 +744,140 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "rmrevin/yii2-fontawesome",
+            "version": "2.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+                "reference": "65ce306da864f4d558348aeba040ed7876878090"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/65ce306da864f4d558348aeba040ed7876878090",
+                "reference": "65ce306da864f4d558348aeba040ed7876878090",
+                "shasum": ""
+            },
+            "require": {
+                "fortawesome/font-awesome": "~4.7",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\fontawesome\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/"
+                }
+            ],
+            "description": "Asset Bundle for Yii2 with Font Awesome",
+            "keywords": [
+                "asset",
+                "awesome",
+                "bundle",
+                "font",
+                "yii"
+            ],
+            "time": "2017-01-11T14:05:47+00:00"
+        },
+        {
+            "name": "select2/select2",
+            "version": "4.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/select2/select2.git",
+                "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/select2/select2/zipball/45f2b83ceed5231afa7b3d5b12b58ad335edd82e",
+                "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "dist/js/select2.js"
+                    ],
+                    "styles": [
+                        "dist/css/select2.css"
+                    ],
+                    "files": [
+                        "dist/js/select2.js",
+                        "dist/js/i18n/*.js",
+                        "dist/css/select2.css"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Select2 is a jQuery based replacement for select boxes.",
+            "homepage": "https://select2.org/",
+            "time": "2020-01-28T05:01:22+00:00"
+        },
+        {
+            "name": "softcommerce/yii2-knob",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iddqdidkfa/yii2-knob.git",
+                "reference": "821472d61a31541c77204d24e5cfb8e22681e0ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iddqdidkfa/yii2-knob/zipball/821472d61a31541c77204d24e5cfb8e22681e0ff",
+                "reference": "821472d61a31541c77204d24e5cfb8e22681e0ff",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "softcommerce\\knob\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL v2"
+            ],
+            "authors": [
+                {
+                    "name": "Oleg Ilyushyn",
+                    "email": "oleg@softcommerce.com.ua",
+                    "homepage": "http://softcommerce.com.ua"
+                }
+            ],
+            "description": "jQuery Knob for Yii2.",
+            "keywords": [
+                "extension",
+                "jquery",
+                "knob",
+                "widget",
+                "yii"
+            ],
+            "time": "2014-06-11T11:36:45+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5036,7 +5476,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.0"
+        "php": "^7.2"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
